@@ -1,0 +1,116 @@
+.login-home {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .login-home {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-home {
+    padding: 10px;
+  }
+}
+
+.login-con {
+  width: 350px;
+  height: 350px;
+  padding: 30px;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .login-con {
+    width: 320px;
+    height: 320px;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-con {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    min-height: 300px;
+    padding: 20px;
+  }
+}
+.web-site-logo {
+  width: 50%;
+  align-self: center;
+}
+
+@media (max-width: 480px) {
+  .web-site-logo {
+    width: 60%;
+  }
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+  flex-grow: 1;
+  margin: 15px 0px;
+  max-height: 70%;
+}
+
+.form-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input > input {
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  .form-input > input {
+    height: 35px;
+    font-size: 16px;
+  }
+}
+
+.error-msg {
+  color: red;
+  padding: 0px;
+  margin: 0;
+}
+
+.login-btn {
+  background-color: #2684eb;
+  color: #ffffff;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+  .login-btn {
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+.input-field-pswd {
+  display: flex;
+  align-items: center;
+}
