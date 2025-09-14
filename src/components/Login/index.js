@@ -91,6 +91,17 @@ class Login extends Component {
             </LoginBtn>
           </form>
           {errorMsg !== '' ? <p className="error-msg">*{errorMsg}</p> : null}
+
+          {/* Login Credentials Information */}
+          <div className="login-credentials-info">
+            <h4 className="credentials-title">For Testing:</h4>
+            <p className="credentials-text">
+              <strong>Username:</strong> rahul
+            </p>
+            <p className="credentials-text">
+              <strong>Password:</strong> rahul@2021
+            </p>
+          </div>
         </div>
       </div>
     )
