@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/NxtWatch-App/static/css/main.1946b8f1.chunk.css",
+    "main.js": "/NxtWatch-App/static/js/main.5e41c358.chunk.js",
+    "main.js.map": "/NxtWatch-App/static/js/main.5e41c358.chunk.js.map",
+    "runtime-main.js": "/NxtWatch-App/static/js/runtime-main.023b899d.js",
+    "runtime-main.js.map": "/NxtWatch-App/static/js/runtime-main.023b899d.js.map",
+    "static/js/2.7cbd584f.chunk.js": "/NxtWatch-App/static/js/2.7cbd584f.chunk.js",
+    "static/js/2.7cbd584f.chunk.js.map": "/NxtWatch-App/static/js/2.7cbd584f.chunk.js.map",
+    "index.html": "/NxtWatch-App/index.html",
+    "static/css/main.1946b8f1.chunk.css.map": "/NxtWatch-App/static/css/main.1946b8f1.chunk.css.map",
+    "static/js/2.7cbd584f.chunk.js.LICENSE.txt": "/NxtWatch-App/static/js/2.7cbd584f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.023b899d.js",
+    "static/js/2.7cbd584f.chunk.js",
+    "static/css/main.1946b8f1.chunk.css",
+    "static/js/main.5e41c358.chunk.js"
+  ]
+}
