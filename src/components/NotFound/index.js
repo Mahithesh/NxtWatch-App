@@ -1,7 +1,7 @@
 import SavedVideosContext from '../../context/SavedVideosContext'
 import Header from '../Header'
 import TabsSection from '../TabsSection'
-import {NFdiv, NFinD, NFimg, Div, Apcp} from './styledComponents'
+import {NFdiv, NFinD, NFimg, Div, Apcp, HomeButton} from './styledComponents'
 
 const NotFound = () => (
   <SavedVideosContext.Consumer>
@@ -23,6 +23,9 @@ const NotFound = () => (
                 />
                 <h1>Page Not Found</h1>
                 <p>We are sorry, the page you requested could not be found.</p>
+                <HomeButton to="/" isL={isLightTheme}>
+                  🏠 Go to Home
+                </HomeButton>
               </NFinD>
             </NFdiv>
           </Div>
