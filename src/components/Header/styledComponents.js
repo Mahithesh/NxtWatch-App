@@ -101,21 +101,118 @@ export const Tbtn = styled.button`
 export const Pop = styled(Popup)`
   background: transparent;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  color: ${({theme}) => (theme === 'light' ? '#181818' : '#f9f9f9')};
-  background-color: ${({theme}) => (theme === 'light' ? '#fff' : '#212121')};
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+
+  &-content {
+    background: ${({isL}) => (isL ? '#fff' : '#212121')} !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 0 !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  &-overlay {
+    background: rgba(0, 0, 0, 0.5) !important;
+  }
 `
 export const PopDiv = styled.div`
-  width: 250px;
+  width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: ${({theme}) => (theme === 'light' ? '#181818' : '#f9f9f9')};
-  background-color: ${({theme}) => (theme === 'light' ? '#fff' : '#212121')};
-  padding: 20px;
+  color: ${({isL}) => (isL ? '#181818' : '#f9f9f9')};
+  background-color: ${({isL}) => (isL ? '#fff' : '#212121')};
+  padding: 24px;
   border-radius: 8px;
+  gap: 20px;
+
+  p {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 480px) {
+    width: 260px;
+    padding: 20px;
+
+    p {
+      font-size: 15px;
+    }
+  }
+`
+
+export const PopupButtonsContainer = styled.div`
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  justify-content: center;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+`
+
+export const CancelBtn = styled.button`
+  background: transparent;
+  border: 1px solid ${({isL}) => (isL ? '#94a3b8' : '#64748b')};
+  color: ${({isL}) => (isL ? '#64748b' : '#94a3b8')};
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 80px;
+
+  &:hover {
+    background-color: ${({isL}) => (isL ? '#f8fafc' : '#334155')};
+    border-color: ${({isL}) => (isL ? '#64748b' : '#94a3b8')};
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  @media (max-width: 480px) {
+    padding: 12px 16px;
+    width: 100%;
+  }
+`
+
+export const ConfirmBtn = styled.button`
+  background: ${({isL}) => (isL ? '#dc2626' : '#ef4444')};
+  border: 1px solid ${({isL}) => (isL ? '#dc2626' : '#ef4444')};
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 80px;
+
+  &:hover {
+    background: ${({isL}) => (isL ? '#b91c1c' : '#dc2626')};
+    border-color: ${({isL}) => (isL ? '#b91c1c' : '#dc2626')};
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(220, 38, 38, 0.3);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(220, 38, 38, 0.3);
+  }
+
+  @media (max-width: 480px) {
+    padding: 12px 16px;
+    width: 100%;
+  }
 `
 export const LogBtn = styled.button`
   background: transparent;

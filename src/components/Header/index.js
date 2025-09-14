@@ -16,6 +16,9 @@ import {
   Tbtn,
   Pop,
   PopDiv,
+  PopupButtonsContainer,
+  CancelBtn,
+  ConfirmBtn,
   LogBtn,
   MenuBtn,
   MobileMenuOverlay,
@@ -94,6 +97,7 @@ const Header = props => {
               </Ul>
               <Pop
                 modal
+                isL={isLightTheme}
                 trigger={
                   <LogBtn isL={isLightTheme} type="button">
                     <span className="logout-text">Logout</span>
@@ -102,14 +106,24 @@ const Header = props => {
                 }
               >
                 {close => (
-                  <PopDiv className="popup-div">
+                  <PopDiv isL={isLightTheme} className="popup-div">
                     <p>Are you sure, you want to logout?</p>
-                    <button type="button" onClick={() => close()}>
-                      Cancel
-                    </button>
-                    <button type="button" onClick={logoutMe}>
-                      Confirm
-                    </button>
+                    <PopupButtonsContainer>
+                      <CancelBtn
+                        type="button"
+                        isL={isLightTheme}
+                        onClick={() => close()}
+                      >
+                        Cancel
+                      </CancelBtn>
+                      <ConfirmBtn
+                        type="button"
+                        isL={isLightTheme}
+                        onClick={logoutMe}
+                      >
+                        Confirm
+                      </ConfirmBtn>
+                    </PopupButtonsContainer>
                   </PopDiv>
                 )}
               </Pop>

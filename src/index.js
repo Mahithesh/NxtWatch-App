@@ -6,7 +6,9 @@ import App from './App'
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter
+      basename={process.env.NODE_ENV === 'production' ? '/NxtWatch-App' : ''}
+    >
       <App />
     </BrowserRouter>
   </React.StrictMode>,
